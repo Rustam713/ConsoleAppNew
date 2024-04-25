@@ -7,7 +7,7 @@
      {
          static void Main()
          {
-             // Console.WriteLine("Hello");
+             Console.WriteLine("Hello");
              // Console.WriteLine("elect tasks: ");
              // Console.Write("Write- 1");
              // Console.Write("Read - 2");
