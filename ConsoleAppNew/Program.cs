@@ -8,26 +8,31 @@
          static void Main()
          {
              Console.WriteLine("Hello");
-             // Console.WriteLine("elect tasks: ");
-             // Console.Write("Write- 1");
-             // Console.Write("Read - 2");
-             // string choose = Console.ReadLine();
-             //
-             // while (true)
-             // {
-             //     if (choose == "1")
-             //     {
-             //         
-             //     }
-             //     else if (choose == "2")
-             //     {
-             //     }
-             //     else
-             //     {
-             //         Console.WriteLine("bye");
-             //         break;
-             //     }
-             // }
+             Console.WriteLine("elect tasks: ");
+             Console.Write("Write- 1");
+             Console.Write("Read - 2");
+             Console.Write("Delate-3");
+
+             string choose = Console.ReadLine();
+             
+             while (true)
+             {
+                 if (choose == "1")
+                 {
+                 }
+                 else if (choose == "2")
+                 {
+                 }
+                 else if (choose == "3")
+                 {
+                 }
+                
+                 else
+                 {
+                     Console.WriteLine("bye");
+                     break;
+                 }
+             }
          }
      }
  }
