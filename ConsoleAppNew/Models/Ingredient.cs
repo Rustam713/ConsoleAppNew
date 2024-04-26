@@ -13,19 +13,16 @@ namespace ConsoleApp3.Models
         public int IngredientId { get; set; }
         public int ProductID { get; set; }
         public int WeightGrams { get; set; }
-        public string Name { get; set; }
         public int DishId { get; set; }
         public int IngredientID { get; set; }
         public int RestaurantId { get; set; }
-        public decimal Price { get; set; }
-        public List<Ingredient> Ingredients { get; set; }
+    
 
-        public Ingredient(int ingredientid, int productID, int weigthGrams, string name, int dishes, int restaurants)
+        public Ingredient(int ingredientid, int productID, int weigthGrams, int dishes, int restaurants)
         {
             IngredientId = ingredientid;
             ProductID = productID;
             WeightGrams = weigthGrams;
-            Name = name;
             DishId = dishes;
             RestaurantId = restaurants;
 

@@ -15,6 +15,8 @@ namespace ConsoleApp3.Models
 
         public decimal CashBalance { get; set; }
 
+       
+
         public Restaurant(int restaurantId, string name, string headChef, string address)
         {
             RestaurantId = restaurantId;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppNew.Models
 {
-    internal class Dish
+    public class Dish
     {
         public int DishId { get; set; }
         public string Name { get; set; }
@@ -19,9 +19,10 @@ namespace ConsoleAppNew.Models
         {
             DishId = dishId;
             Name = name;
+            Price = price;
             RestaurantId = restaurant;
             IngredientsId = ingredients;
-            Price = price;
+            
 
         }
     }

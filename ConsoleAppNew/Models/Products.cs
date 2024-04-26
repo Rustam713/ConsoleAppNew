@@ -11,12 +11,12 @@ namespace ConsoleApp3.Models
         public int ProductId { get; set; }
         public string Name { get; set; }
         public decimal PricePerGram { get; set; }
-        public ProductType Type { get; set; }
+        public string Type { get; set; }
         public int Count { get; set; }
         public string Unit { get; set; }
 
 
-        public Products(int productId, string name, decimal pricePerGram, ProductType type, String unit, int count)
+        public Products(int productId, string name, decimal pricePerGram, string type, string unit, int count)
         {
             ProductId = productId;
             Name = name;
