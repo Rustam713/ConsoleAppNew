@@ -11,7 +11,7 @@ namespace ConsoleAppNew.View
 {
     internal class RestaurantView
     {
-        public void ShowMenu()
+        public static void ShowMenu()
         {
             bool f = false;
             while (f)
@@ -49,19 +49,19 @@ namespace ConsoleAppNew.View
 
 
 
-        private void HandleIncorrectPoint()
+        private static void HandleIncorrectPoint()
         {
             ShowMessage("Ты ввел неправильное значение, попробуй еще раз!");
             ShowMenu();
         }
 
-        private void Exit()
+        private static void Exit()
         {
             ShowMessage("!!!!");
             Environment.Exit(0);
         }
 
-        private void ShowMessage(string msg)
+        private static void ShowMessage(string msg)
         {
             Console.Clear();
             Console.WriteLine(msg);
@@ -69,7 +69,7 @@ namespace ConsoleAppNew.View
             Console.Clear();
         }
 
-        private void addedEmployee()
+        private static void addedEmployee()
         {
 
 
@@ -99,11 +99,11 @@ namespace ConsoleAppNew.View
         }
 
 
+        static string RestaurantDirectory = "C:\\Users\\rustamcholponbaev\\RiderProjects\\ConsoleAppNew\\ConsoleAppNew\\entity\\Restaurant\\";
 
+       //static string RestaurantDirectory = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\";
 
-        string RestaurantDirectory = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\";
-
-        public void ShowProducts()
+        public static void ShowProducts()
         {
             { /*
            
@@ -153,7 +153,7 @@ namespace ConsoleAppNew.View
         }
 
         // Обновление информации о сотруднике
-        private void editEmployee()
+        private static void editEmployee()
         {
             Console.WriteLine("введите код сотруд");
             string codeEmpl = Console.ReadLine();
@@ -216,7 +216,7 @@ namespace ConsoleAppNew.View
 
             }
         }
-        private void delete()
+        private static void delete()
         {
             bool t = false;
             while (!t)
