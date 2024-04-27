@@ -10,13 +10,13 @@ namespace ConsoleAppNew.Controller
     public class ProductController
     {
 
-        private string _restaurantDirectory;  // Путь к директории с файлами ресторана
+        private string _ProductDirectory;  // Путь к директории с файлами ресторана
 
         private readonly Products product;
 
         public ProductController(string directoryPath)
         {
-            _restaurantDirectory = directoryPath;
+            _ProductDirectory = directoryPath;
         }
 
 
@@ -63,7 +63,7 @@ namespace ConsoleAppNew.Controller
 
             try
             {
-                string[] filePaths = Directory.GetFiles(_restaurantDirectory);
+                string[] filePaths = Directory.GetFiles(_ProductDirectory);
 
                 foreach (string filePath in filePaths)
                 {
@@ -98,7 +98,7 @@ namespace ConsoleAppNew.Controller
             try
             {
                 // Формируем путь к файлу с данными о сотруднике
-                string filePath = Path.Combine(_restaurantDirectory, $"{restaurantId}.txt");
+                string filePath = Path.Combine(_ProductDirectory, $"{restaurantId}.txt");
 
                 // Проверяем существование файла
                 if (!File.Exists(filePath))
@@ -140,7 +140,7 @@ namespace ConsoleAppNew.Controller
         {
             try
             {
-                string filePath = Path.Combine(_restaurantDirectory, $"{restaurant.ProductId}.txt");
+                string filePath = Path.Combine(_ProductDirectory, $"{restaurant.ProductId}.txt");
 
                 if (File.Exists(filePath))
                 {

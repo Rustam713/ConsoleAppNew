@@ -1,4 +1,5 @@
 ﻿using ConsoleApp3.Models;
+using ConsoleAppNew.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,15 @@ namespace ConsoleApp3.Controller
 
         private string _restaurantDirectory;  // Путь к директории с файлами ресторана
 
-        private readonly Restaurant restaurant;
+        private readonly Restaurant _restaurant;
+
+
+        public RestaurantController(Restaurant restaurant)
+        {
+
+            _restaurant = restaurant;
+
+        }
 
         public RestaurantController(string directoryPath)
         {
@@ -25,7 +34,7 @@ namespace ConsoleApp3.Controller
 
         public void Save()
         {
-            string IdentifierPath = "C:\\Users\\Aidin\\source\\Новая папка\\ConsoleApp3\\entity\\employee\\max\\EmployeeIdentifier.txt";
+            string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\max\\RestaurantIdentifier.txt";
 
 
             int RestaurantIdentifier = 0;
@@ -33,24 +42,24 @@ namespace ConsoleApp3.Controller
             {
                 RestaurantIdentifier = int.Parse(sr.ReadLine());
             }
-            int Employee_Code = RestaurantIdentifier++;
+            int RestaurantCode = RestaurantIdentifier++;
 
        
           
-            using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\Новая папка\\ConsoleApp3\\entity\\employee\\employee{Employee_Code}.txt"))
+            using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\{RestaurantCode}.txt"))
             {
 
 
-                sw.WriteLine(Employee_Code);
-                sw.WriteLine($"{restaurant.RestaurantId}");
-                sw.WriteLine($"{restaurant.Name}");
-                sw.WriteLine($"{restaurant.Address}");
-                sw.WriteLine($"{restaurant.CashBalance}");
+                sw.WriteLine(RestaurantCode);
+                sw.WriteLine($"{_restaurant.Name}");
+                sw.WriteLine($"{_restaurant.HeadChef}");
+                sw.WriteLine($"{_restaurant.Address}");
+                
 
             }
             using (StreamWriter sw = new StreamWriter(IdentifierPath))
             {
-                sw.WriteLine($"{Employee_Code}");
+                sw.WriteLine($"{RestaurantCode+1}");
             }
         }
 

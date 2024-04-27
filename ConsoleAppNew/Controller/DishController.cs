@@ -12,7 +12,11 @@ namespace ConsoleAppNew.Controller
     {
         private string _dishDirectory;  // Путь к директории с файлами ресторана
 
-        private readonly Dish dish;
+        private readonly Dish _dish;
+        public DishController(Dish dish)
+        {
+            _dish = dish;
+        }
 
         public DishController(string directoryPath)
         {
@@ -40,11 +44,10 @@ namespace ConsoleAppNew.Controller
 
 
                 sw.WriteLine(Dish_Code);
-                sw.WriteLine($"{dish.RestaurantId}");
-                sw.WriteLine($"{dish.Name}");
-                sw.WriteLine($"{dish.Price}");
-                sw.WriteLine($"{dish.RestaurantId}");
-                sw.WriteLine($"{dish.IngredientsId}");
+                sw.WriteLine($"{_dish.RestaurantId}");
+                sw.WriteLine($"{_dish.Price}");
+                sw.WriteLine($"{_dish.RestaurantId}");
+                sw.WriteLine($"{_dish.IngredientsId}");
 
             }
           

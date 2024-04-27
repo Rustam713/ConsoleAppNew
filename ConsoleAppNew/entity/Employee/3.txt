@@ -1,6 +1,6 @@
 3
-user
-test
-90000
+user2
+poss
+80000
 test
 1

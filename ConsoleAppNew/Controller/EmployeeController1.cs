@@ -22,6 +22,10 @@ public class EmployeeController1
         _employeesDirectory = directoryPath;
     }
 
+    public EmployeeController1()
+    {
+    }
+
 
 
 
@@ -153,6 +157,7 @@ public class EmployeeController1
             else
             {
                 Console.WriteLine($"Файл с данными о сотруднике '{employee.Employee_code}' не найден.");
+                Thread.Sleep(1000);
             }
         }
         catch (Exception ex)

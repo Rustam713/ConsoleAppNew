@@ -24,5 +24,11 @@ namespace ConsoleApp3.Models
             HeadChef = headChef;
             Address = address;
         }
+
+        public Restaurant(int restaurantId)
+        {
+            RestaurantId = restaurantId;
+        }
+
     }
 }
