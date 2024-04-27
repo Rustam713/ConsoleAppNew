@@ -12,7 +12,11 @@ namespace ConsoleAppNew.Controller
 
         private string _ProductDirectory;  // Путь к директории с файлами ресторана
 
-        private readonly Products product;
+        private readonly Products _product;
+        public ProductController(Products products) 
+        {
+            _product=products;
+        }
 
         public ProductController(string directoryPath)
         {
@@ -41,11 +45,11 @@ namespace ConsoleAppNew.Controller
 
 
                 sw.WriteLine(Product_Code);
-                sw.WriteLine($"{product.ProductId}");
-                sw.WriteLine($"{product.Name}");
-                sw.WriteLine($"{product.Type}");
-                sw.WriteLine($"{product.Count}");
-                sw.WriteLine($"{product.PricePerGram}");
+                sw.WriteLine($"{_product.ProductId}");
+                sw.WriteLine($"{_product.Name}");
+                sw.WriteLine($"{_product.Type}");
+                sw.WriteLine($"{_product.Count}");
+                sw.WriteLine($"{_product.PricePerGram}");
 
             }
           
