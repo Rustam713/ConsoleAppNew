@@ -24,7 +24,7 @@ namespace ConsoleApp3.Controller
 
         }
 
-        public ProductController(string directoryPath)
+        public RestaurantController(string directoryPath)
         {
             _restaurantDirectory = directoryPath;
         }
