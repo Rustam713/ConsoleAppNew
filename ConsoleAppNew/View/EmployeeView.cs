@@ -104,7 +104,7 @@ namespace ConsoleAppNew.View
 
 
         static string employeesDirectory = "C:\\Users\\rustamcholponbaev\\RiderProjects\\ConsoleAppNew\\ConsoleAppNew\\entity\\Employee\\";
-
+        //static string employeesDirectory = "C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Employee\\";
         //static string employeesDirectory = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Employee\\";
 
         public static void ShowProducts() {

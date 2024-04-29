@@ -28,8 +28,9 @@ namespace ConsoleAppNew.Controller
 
         public void Save()
         {
-
-            string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Products\\max\\ProductIdentifier.txt";
+            
+            string IdentifierPath = "C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Products\\max\\ProductIdentifier.txt";
+            //string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Products\\max\\ProductIdentifier.txt";
      
             int ProductIdentifier = 0;
             using (StreamReader sr = new StreamReader(IdentifierPath))
@@ -39,8 +40,9 @@ namespace ConsoleAppNew.Controller
             int Product_Code = ProductIdentifier++;
 
             int maxId = 0;
-           
-            using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\Новая папка\\ConsoleApp3\\entity\\Products\\{ProductIdentifier}.txt"))
+            
+            using (StreamWriter sw = new StreamWriter($"C:\\Users\\RUSTAM\\source\\Новая папка\\ConsoleApp\\entity\\Products\\{ProductIdentifier}.txt"))
+            //using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\Новая папка\\ConsoleApp3\\entity\\Products\\{ProductIdentifier}.txt"))
             {
 
 

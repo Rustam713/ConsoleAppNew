@@ -11,7 +11,6 @@ using ConsoleAppNew.View;
              Console.WriteLine("elect tasks: ");
              Console.WriteLine(" Write - 1");
              Console.WriteLine("Read  -  2");
-             Console.WriteLine("Delate - 3");
              Console.Write(" --->: ");
 
              string choose = Console.ReadLine();
@@ -76,11 +75,6 @@ using ConsoleAppNew.View;
                          Console.WriteLine("bye");
                          break;
                      }
-
-                 }
-                 else if (choose == "3")
-                 {
-                     
                  }
                  else
                  {

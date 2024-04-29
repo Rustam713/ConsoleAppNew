@@ -34,7 +34,10 @@ namespace ConsoleApp3.Controller
 
         public void Save()
         {
-            string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\max\\RestaurantIdentifier.txt";
+            //string IdentifierPath = "C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Restaurant\\max\\RestaurantIdentifier.txt";
+
+            //string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\max\\RestaurantIdentifier.txt";
+            string IdentifierPath = "C:/Users/rustamcholponbaev/RiderProjects/ConsoleAppNew/ConsoleAppNew/entity/Restaurant/max/RestaurantIdentifier.txt";
 
 
             int RestaurantIdentifier = 0;
@@ -43,10 +46,13 @@ namespace ConsoleApp3.Controller
                 RestaurantIdentifier = int.Parse(sr.ReadLine());
             }
             int RestaurantCode = RestaurantIdentifier++;
+            
+            
+            using (StreamWriter sw = new StreamWriter($"C:/Users/rustamcholponbaev/RiderProjects/ConsoleAppNew/ConsoleAppNew/entity/Restaurant/{RestaurantCode}.txt"))
 
-       
-          
-            using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\{RestaurantCode}.txt"))
+            //using (StreamWriter sw = new StreamWriter($"C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Restaurant\\{RestaurantCode}.txt"))
+  
+            //using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\{RestaurantCode}.txt"))
             {
 
 

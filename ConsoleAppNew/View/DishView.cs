@@ -99,9 +99,9 @@ namespace ConsoleAppNew.View
 
 
 
-        static string RestaurantDirectory = "C:\\Users\\rustamcholponbaev\\RiderProjects\\ConsoleAppNew\\ConsoleAppNew\\entity\\Restaurant\\";
-
-        //static string RestaurantDirectory = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Restaurant\\";
+        static string RestaurantDirectory = "C:\\Users\\rustamcholponbaev\\RiderProjects\\ConsoleAppNew\\ConsoleAppNew\\entity\\Dish\\";
+        //static string RestaurantDirectory = "C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Dish\\";
+        //static string RestaurantDirectory = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Dish\\";
 
         public static void ShowProducts()
         {
@@ -155,7 +155,7 @@ namespace ConsoleAppNew.View
         // Обновление информации о сотруднике
         private static void editEmployee()
         {
-            Console.WriteLine("введите код сотруд");
+            Console.WriteLine("введите код блюдо");
             string codeEmpl = Console.ReadLine();
             if (!int.TryParse(codeEmpl, out int number))
             {

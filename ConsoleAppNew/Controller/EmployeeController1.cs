@@ -33,7 +33,9 @@ public class EmployeeController1
     // Метод для добавление 
     public void Save()
     {
-        string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Employee\\max\\EmployeeIdentifier.txt";
+        string IdentifierPath = "C:\\Users\\Rustam\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Employee\\max\\EmployeeIdentifier.txt";
+
+        //string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Employee\\max\\EmployeeIdentifier.txt";
         int EmployeeIdentifier = 0;
         using (StreamReader sr = new StreamReader(IdentifierPath))
         {
@@ -42,8 +44,9 @@ public class EmployeeController1
         int Employee_Code = EmployeeIdentifier++;
 
     
-     
-        using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Employee\\{Employee_Code}.txt"))
+        using (StreamWriter sw = new StreamWriter($"C:\\Users\\Rustam\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Employee\\{Employee_Code}.txt"))
+
+      //  using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Employee\\{Employee_Code}.txt"))
         {
 
             // Форматирование данных сотрудника для записи

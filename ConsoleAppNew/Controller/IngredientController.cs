@@ -32,7 +32,9 @@ namespace ConsoleAppNew.Controller
         // Метод для добавление 
         public void Save()
         {
-            string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Ingredient\\max\\IngredientIdentifier.txt";
+            string IdentifierPath = "C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Ingredient\\max\\IngredientIdentifier.txt";
+
+            //string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Ingredient\\max\\IngredientIdentifier.txt";
   
             int IngredientIdentifier = 0;
             using (StreamReader sr = new StreamReader(IdentifierPath))
@@ -42,8 +44,9 @@ namespace ConsoleAppNew.Controller
             int ingredient_Code = IngredientIdentifier++;
 
             int maxId = 0;
-          
-            using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Ingredient\\{ingredient_Code}.txt"))
+            
+            using (StreamWriter sw = new StreamWriter($"C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Ingredient\\{ingredient_Code}.txt"))
+            //using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Ingredient\\{ingredient_Code}.txt"))
             {
 
               

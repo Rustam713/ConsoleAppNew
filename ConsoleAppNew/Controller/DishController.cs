@@ -28,8 +28,9 @@ namespace ConsoleAppNew.Controller
 
         public void Save()
         {
-            string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Dish\\max\\DishIdentifier.txt";
-     
+            //string IdentifierPath = "C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Dish\\max\\DishIdentifier.txt";
+            string IdentifierPath = "C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Dish\\max\\DishIdentifier.txt";
+
 
             int DishIdentifier = 0;
             using (StreamReader sr = new StreamReader(IdentifierPath))
@@ -39,7 +40,8 @@ namespace ConsoleAppNew.Controller
             int Dish_Code = DishIdentifier++;
 
             int maxId = 0;
-            using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Dish\\{Dish_Code}.txt"))
+            using (StreamWriter sw = new StreamWriter($"C:\\Users\\RUSTAM\\source\\repos\\ConsoleAppNew\\ConsoleAppNew\\entity\\Dish\\{Dish_Code}.txt"))
+            //using (StreamWriter sw = new StreamWriter($"C:\\Users\\Aidin\\source\\repos\\ConsoleAppNew2\\ConsoleAppNew\\entity\\Dish\\{Dish_Code}.txt"))
             {
 
 
